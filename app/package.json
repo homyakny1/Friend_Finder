@@ -1,0 +1,15 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "An app to find friends trough a servey.",
+  "main": "server.js",
+  "scripts": {
+    "test": "Hi",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
