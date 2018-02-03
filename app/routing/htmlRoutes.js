@@ -1,5 +1,17 @@
-res.send(path.join(__dirname, "public/home.html"));
+// LOAD DATA
+// ===============================================================================
+var path = require("path");
 
-// app.get("/survey", function (req, res) {
-//     res.sendFile(path.join(__dirname, "public/survey.html"));
-// });
+// ROUTING
+// ===============================================================================
+module.exports = function (app) {
+
+    app.get("/survey", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    });
+
+    app.get("/", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
+
+};
